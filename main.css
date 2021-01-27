@@ -19,6 +19,8 @@ p {
 .container{
   text-align: center;
   margin-left: 1190px;
+  color: black;
+  
 }
 .btn{
   border: 1px solid black;
