@@ -208,8 +208,8 @@ div[class='btn btn-primary'] {
 .btn191{
   margin-left: 25%;
   padding: 10px;
-  background-color: #3498db;
+  background-color: #333;
   border: 2px solid #3498db;
   width: 50%;
-
+  color: white;
 }
