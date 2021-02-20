@@ -5,6 +5,7 @@
 }
 
 body {
+   background: linear-gradient(120deg, dodgerblue, rgb(202, 44, 168));
   font-family: 'Space Grotesk', sans-serif;
 }
 
@@ -79,7 +80,7 @@ nav{
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: #5d4954;
+  background-color: #333;
   font-family: 'Space Grotesk', sans-serif;
   height: 75px;
 }
