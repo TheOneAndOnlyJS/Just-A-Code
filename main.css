@@ -3,12 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+linear-gradient(120deg, dodgerblue, rgb(202, 44, 168))
 
 body {
-   background: linear-gradient(120deg, dodgerblue, rgb(202, 44, 168));
+  background: #1A2238;
   font-family: 'Space Grotesk', sans-serif;
 }
 
+h3{
+  color:#9DAAF2;
+  text-align: center;
+}
  
 p {
   color: #fff;
