@@ -3,10 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-linear-gradient(120deg, dodgerblue, rgb(202, 44, 168))
 
 body {
-  background: #1A2238;
+  background-color: #1A2238;
   font-family: 'Space Grotesk', sans-serif;
 }
 
