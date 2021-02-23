@@ -13,6 +13,7 @@ h3{
   color:#fff;
   text-align: center;
 }
+
  
 p {
   color: #fff;
@@ -78,6 +79,7 @@ p {
 .btn3:hover::before,.btn4:hover::before{
   height: 0%;
 }
+
 
 nav{
   display: flex;
@@ -152,11 +154,12 @@ nav{
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #5d4954;
+    background-color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
+    z-index: 2;
     transform: translateX(500%);
     transition: transform 0.5s ease-in;
   }
@@ -216,4 +219,26 @@ div[class='btn btn-primary'] {
   border: 2px solid #3498db;
   width: 50%;
   color: white;
+}
+
+.banner{
+  background-color: white;
+  color: #1A2238;
+}
+
+@keyframes moveBanner {
+  0% {
+    transform: translateY(40rem) rotateY(-20deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
+}
+
+.boxing{
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+  opacity: 0;
+
+  animation: moveBanner 1s 0.5s forwards;
 }
