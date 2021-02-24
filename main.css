@@ -21,65 +21,6 @@ p {
   text-align: center;
 }
 
-.container{
-  text-align: center;
-  margin-left: 600px;
-  color: black;
-  width: 20%;
-  
-}
-.btn{
-  border: 1px solid black;
-  background: none;
-  padding: 10px 20px;
-  font-size: 20px;
-  font-family: "montserrat";
-  cursor: pointer;
-  margin: 10px;
-  transition: 0.8s;
-  position: relative;
-  overflow: hidden;
-}
-.btn1,.btn2{
-  color: #3498db;
-}
-.btn3,.btn4{
-  color: #fff;
-}
-.btn1:hover,.btn2:hover{
-  color: #fff;
-}
-.btn3:hover,.btn4:hover{
-  color: #3498db;
-}
-.btn::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  background: #3498db;
-  z-index: -1;
-  transition: 0.8s;
-}
-.btn1::before,.btn3::before{
-  top: 0;
-  border-radius: 0 0 50% 50%;
-}
-.btn2::before,.btn4::before{
-  bottom: 0;
-  border-radius: 50% 50% 0 0;
-}
-.btn3::before,.btn4::before{
-  height: 180%;
-}
-.btn1:hover::before,.btn2:hover::before{
-  height: 180%;
-}
-.btn3:hover::before,.btn4:hover::before{
-  height: 0%;
-}
-
 
 nav{
   display: flex;
@@ -90,7 +31,7 @@ nav{
   font-family: 'Space Grotesk', sans-serif;
   height: 75px;
 }
-.btngod{
+.kkgod{
   background-color: dodgerblue;
   color: white;
   border-radius: 5px;
@@ -203,16 +144,16 @@ nav{
 
 
 /* @media screen and (max-width:768px) {
-  .btn .btn-primary {
+  .kk .kk-primary {
     justify-content: center;
   }
 } */
 
-div[class='btn btn-primary'] {
+div[class='kk kk-primary'] {
   z-index: -1;
 }
 
-.btn191{
+.kk191{
   margin-left: 25%;
   padding: 10px;
   background-color: #333;
@@ -241,4 +182,50 @@ div[class='btn btn-primary'] {
   opacity: 0;
 
   animation: moveBanner 1s 0.5s forwards;
+}
+
+.container{
+  text-align: center;
+  margin-top:50px;
+}
+
+.kk{
+  width: 200px;
+  height: 60px;
+  background: none;
+  border: 4px solid;
+  color: #3498db;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+}
+
+.kk::before,.kk::after{
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  background: #353b48;
+  transform: skewX(50deg);
+  transition: .4s linear;
+}
+
+.kk::before{
+  top: -4px;
+  left: 10%;
+}
+
+.kk::after{
+  bottom: -4px;
+  right: 10%;
+}
+
+.kk:hover::before{
+  left: 80%;
+}
+
+.kk:hover::after{
+  right: 80%;
 }
