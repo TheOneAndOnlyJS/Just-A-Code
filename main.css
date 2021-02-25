@@ -229,3 +229,19 @@ div[class='kk kk-primary'] {
 .kk:hover::after{
   right: 80%;
 }
+
+.section-heading {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #4b4b4b;
+  margin-bottom: 6rem;
+}
+
+.underline {
+  width: 12rem;
+  height: 0.3rem;
+  margin-top: -5%;
+  margin-left: 43%;
+  background-color: #c29525;
+}
