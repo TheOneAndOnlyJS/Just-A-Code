@@ -29,6 +29,131 @@
     })(document);
     smartlook('init', '21cbecd762242af68bfb8ba3afc1c0c779861ab0');
 </script>
+<style>
+
+  section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #1A2238;
+    color: white;
+  }
+  .container1 {
+    width: 40%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #00000010;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 10%;
+    background-color:#d64b20;
+  }
+  .form-group {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid rgba(128, 128, 128, 0.199);
+    margin-top: 5px;
+  }
+  
+  textarea {
+    resize: vertical;
+    background-color: #2f3131;
+    color: white;
+  }
+  button[type="submit"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: "Montserrat";
+    color: rgb(27, 166, 247);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #2b2e2e;
+    transition: 0.3s ease background-color;
+  }
+  button[type="submit"]:hover {
+    background-color: #333(214, 226, 236);
+  }
+  #status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  #status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+  }
+  #status.error {
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+  }
+  @keyframes status {
+    0% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    90% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+  
+  input{
+      background-color: #2b2e2e;
+      color: white;
+  }
+
+  @media screen and (max-width:768px) { 
+    section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #1A2238;
+    color: white;
+  }
+
+  .container1 {
+    width: 95%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #00000010;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 10%;
+    background-color:#d64b20;
+  }
+
+}
+  </style>
     <title>Just-A-Code home page</title>
 </head>
 <body>
@@ -87,18 +212,51 @@
        <br>
       </h4>
     </div>
-
+  <br>
+  <br>
+  <h2 style="text-align: center;"><p>To email us fill the form and we will see the message you have sent us!</p></h2>
   <br>
   <br>
   <br>
   <br>
   <br>
-  <p>Note: I am active on Fiverr and if you want to get a custom logo or get responsive websites, click the button below</p>
-  <div class="container">
-        <a href="https://www.fiverr.com/alexandermanali/make-custom-logo-for-you?gig_id=195002824&utm_campaign=base_gig_create_share&utm_content=&utm_medium=shared&utm_source=get_url&utm_term=&view=gig">
-          <button class="kk">Visit</button>
-        </a>
-      </div>
+  <br>
+  <section>
+    <div class="container1">
+      <form action="https://formspree.io/f/xpzkwdnq" method="POST" id="my-form">
+  
+        <div class="form-group">
+          <label for="firstName"> First Name</label>
+          <input type="text" id="firstName" name="firstName" placeholder="First Name*"> 
+        </div>
+  
+        <div class="form-group">
+          <label for="latsName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Last Name*">
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email*">
+        </div>
+  
+        <div class="form-group">
+          <label for="massage">Message</label>
+          <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+        </div>
+  
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div id="status"></div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <br>
   <br>
   <h2 style="text-align: center;"><p><u>New Updates:</u></p></h2>
@@ -110,4 +268,5 @@
     <p style="text-align: center;">By visiting Just-A-Code you agree to the <a href="./term.html" style="color: dodgerblue;">Terms of use</a></p>
 </body>
 <script src="app.js"></script>
+<script src="main.js"></script>
 </html>
