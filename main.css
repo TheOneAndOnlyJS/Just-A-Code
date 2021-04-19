@@ -164,9 +164,15 @@ div[class='kk kk-primary'] {
 
 .banner{
   background-color: white;
+  width: 60%;
+  margin: 20%;
   color: #1A2238;
+  border-radius: 5px;
 }
 
+.logo100{
+  display: block;
+}
 @keyframes moveBanner {
   0% {
     transform: translateY(40rem) rotateY(-20deg);
@@ -241,7 +247,29 @@ div[class='kk kk-primary'] {
 .underline {
   width: 12rem;
   height: 0.3rem;
-  margin-top: -5%;
-  margin-left: 43%;
+  margin-top: -9%;
+  margin-left: 38%;
   background-color: #c29525;
+}
+
+@media screen and (max-width:768px){
+  .banner{
+    background-color: white;
+    width: 90%;
+    margin: 5%;
+    color: #1A2238;
+    border-radius: 5px;
+  }
+  
+  .logo100{
+    display: none;
+  }
+
+  .underline {
+    width: 12rem;
+    height: 0.3rem;
+    margin-top: -17%;
+    margin-left: 27%;
+    background-color: #c29525;
+  }
 }
