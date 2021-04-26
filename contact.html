@@ -1,41 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/png" href="./Just a code - Copy.png">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
-  <link rel="stylesheet" href="https://theoneandonlyjs.github.io/code/css/main.css">
-    <title>Just-A-Code home page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
+  <link rel="stylesheet" href="./anewcss.css">
+  <link rel="shortcut icon" href="./justacode (1).png" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        // Set div display to
+        $(".submitbutton").click(function(){
+            $("#container1").css("display", "none");
+            $(".block").fadeIn(10000);
+        });
+      });
+        
+    </script>
+  <title>Just-A-Code | Contact</title>
 </head>
 <body>
   <nav>
-    <div class="logo" style="display: flex;">
-        <img src="./Just a code.png" style="size: 50px; margin-top: -2%;" width="10%"><h4 style="margin-left: 20px; margin-top: 10px"><a href="./mainpage.html" style="color: white;">Just-A-Code</a></h4>
-    </div>
-    <ul class="nav-links">
-       <li><a href="./mainpage.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-      <!-- <li><a href="./">About</a></li> -->
-      <li><a href="./products.html"><i class="fa fa-reorder"></i> Products</a></li>
-      <li><a href="./contact.html"><i class="fa fa-phone"></i> Contact</a></li>
-      <li><a href="./donate.html">Donate <i class="fa fa-heart" style="color: #FC121E;"></i></a></li>
+    <ul class="nav-list">
+      <h2>Just-A-Code</h2>
+      <li class="nav-links">
+        <a href="#">
+        </a>
+      </li>
+      <img src="./justacode (1).png" alt=""  class="logoimg">
+      <li class="nav-links">
+        <a href="./index.html">Home</a>
+      </li>
+      <li class="nav-links">
+        <a href="./contact.html">Contact</a>
+      </li>
+      <li class="nav-links">
+        <a href="./moreweb.html">More sites</a>
+      </li>
+      <li class="nav-links">
+        <a href="./donate.html">Donate</a>
+      </li>
+      <li class="nav-links">
+        <a href="./updates.html">Updates</a>
+      </li>
     </ul>
-    <div class="burger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
   </nav>
-  <br><br><br><br><br>
-    <p>Email me!</p>
-    <div class="container">
-        <a href="mailto:justacode123@gmail.com"><button class="kk" style="color: #fff;">Click here to mail me</button></a><br>
-        <!-- <div class="btn btn-primary" style="font-family: 'Space Grotesk', sans-serif;">Just-A-Code Learning</div> -->
-    </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,160L80,133.3C160,107,320,53,480,74.7C640,96,800,192,960,202.7C1120,213,1280,139,1360,101.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+  <br>
+  <br>
+  <h1 style="color: white; text-align: center;">Send us a message by filling this form!</h1>
+  <h1 style="color: white; text-align: center;">If there is an error make sure you fill in all details</h1>
+  <div class="paddingsec">
+    <section>
+      <div id="container1">
+        <form action="https://formspree.io/f/xpzkwdnq
+        " method="POST" id="my-form">
+    
+          <div class="form-group">
+            <label for="firstName"> First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name*" required="true"> 
+          </div>
+    
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email*" required="true">
+          </div>
+          <div class="form-group">
+            <label for="massage">Message</label>
+            <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Your Message*" required="true"></textarea>
+          </div>
+    
+          <button type="submit" class="submitbutton" style="font-family: 'Space Grotesk', sans-serif;">Submit</button>
+        </form>
+      </div>
+    </section>
+  </div>
+    <br>
+    <div id="status"></div>
+    <h3 class="block" style="text-align: center;">Refresh the page to reset or submit a new form</h3>
+  <script src="./main.js"></script>
 </body>
-<script src="app.js"></script>
 </html>
