@@ -10,12 +10,12 @@ window.addEventListener("DOMContentLoaded", function () {
     function success() {
       form.reset();
       status.classList.add("success");
-      status.innerHTML = "Your message was sent successfully!";
+      status.innerHTML = "Your message was sent successfully. Thanks!";
     }
   
     function error() {
       status.classList.add("error");
-      status.innerHTML = "An error occured, make sure you filled in all the details.";
+      status.innerHTML = "Sorry, an error occured. Maybe will out all the details and try again.";
     }
   
     // handle the form submission event
@@ -43,4 +43,16 @@ window.addEventListener("DOMContentLoaded", function () {
     };
     xhr.send(data);
   }
+
+
+// start animation
+const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 });
+tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
+tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
+tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
+tl.fromTo(".big-text", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
   
+
+// slides
