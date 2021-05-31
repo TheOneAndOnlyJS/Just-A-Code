@@ -85,14 +85,16 @@ img{
 
 .aboutme{
   background-color: white;
-  width: 50%;
+  width: 70%;
   margin: auto;
   padding: 25px;
   border-radius: 5px;
+  height: 50vh;
 }
 
 .aboutme p{
   font-size: 25px;
+  text-align: center;
 }
 
 .paddingsec{
@@ -114,6 +116,8 @@ section {
   flex-direction: column;
   color: white;
   padding: 10px;
+  background-image: url("./images/Abract01.png");
+  background-size: cover;
 }
 #container1 {
   width: 40%;
@@ -228,7 +232,7 @@ input{
 }
 
 .div-section {
-  padding: 10px;
+  padding: 20px;
   background-color: #039d69;
 
 }
@@ -237,6 +241,8 @@ input{
   width: 50%;
   margin-left: 25%;
   border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .div-section p{
@@ -245,6 +251,10 @@ padding: 20px;
 text-align: center;
 color: white;
 }
+
+.div-section a{
+  text-decoration: none;
+  }
 
 
 .btnv2{
@@ -260,7 +270,7 @@ color: white;
 
 .donate-container{
   margin: auto;
-  width: 50%;
+  width: 30%;
   padding: 12px 12px;
   border-radius: 10px;
   background-color: dodgerblue;
@@ -303,11 +313,27 @@ color: white;
   display: inline-block;
 }
 
+.donate-container-2{
+  display: flex;
+}
+
 
 @media screen and (max-width:768px) { 
 
   .paddingsec{
   padding: 0;
+}
+
+.donate-container-2{
+  display: block;
+  padding: 10px;
+}
+
+.donate-container{
+  width: 90%;
+  padding: 12px 12px;
+  border-radius: 10px;
+  background-color: dodgerblue;
 }
 
  section {
@@ -317,7 +343,7 @@ color: white;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: white;
+  background-image: url("./images/Abract01.png");
 }
 
 #container1 {
@@ -414,6 +440,7 @@ h2{
   text-align: center;
   animation: small-to-big 2s;
 }
+
 
 @keyframes small-to-big{
 
