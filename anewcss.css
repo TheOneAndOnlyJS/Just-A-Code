@@ -31,6 +31,24 @@ main{
   top: 0;
 }
 
+#copy-text{
+  background-color: #333;
+  width: 100%; 
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 5px;
+}
+
+#copy-button{
+  background-color: limegreen;
+  width: 50%;
+  padding: 15px;
+}
+
+.copy-button-position{
+  text-align: center;
+}
 
 .nav-list {
   background: #0099ff;
