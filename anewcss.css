@@ -478,3 +478,38 @@ h2{
   }
 
 }
+
+.position{
+  display: flex;
+  justify-content: center;
+}
+
+.semi-box{
+  background-color: #fff;
+  width: 95%;
+  height: 60vh;
+  border-radius: 30px;
+}
+
+.semi-box img {
+  float: left;
+  width: 50%;
+  height: 60vh;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.semi-box p {
+  display: flex;
+  color: black;
+  font-size: 25px;
+  margin: 3%;
+  margin-right: 10%;
+}
+
+.semi-box a {
+  color: dodgerblue;
+  font-size: 25px;
+  text-decoration: none;
+  text-align: center;
+}
