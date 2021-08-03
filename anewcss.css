@@ -132,18 +132,6 @@ img{
    color: white;
 }
 
-section {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: white;
-  padding: 10px;
-  background-image: url("./images/Abract01.png");
-  background-size: cover;
-}
 #container1 {
   width: 40%;
   max-width: 500px;
@@ -256,7 +244,7 @@ input{
   padding: 10px;
 }
 
-.div-section {
+/*.div-section {
   padding: 20px;
   background-color: #039d69;
 
@@ -279,7 +267,7 @@ color: white;
 
 .div-section a{
   text-decoration: none;
-  }
+  }*/
 
 
 .btnv2{
@@ -361,15 +349,6 @@ color: white;
   background-color: dodgerblue;
 }
 
- section {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-image: url("./images/Abract01.png");
-}
 
 #container1 {
   width: 95%;
@@ -487,11 +466,10 @@ h2{
 .semi-box{
   background-color: #fff;
   width: 95%;
-  height: 60vh;
   border-radius: 30px;
 }
 
-.semi-box img {
+.semi-box .img {
   float: left;
   width: 50%;
   height: 60vh;
@@ -512,4 +490,28 @@ h2{
   font-size: 25px;
   text-decoration: none;
   text-align: center;
+}
+
+.non-use{
+  color: white;
+  padding: 12px 12px;
+}
+
+.non-use h1{
+  text-align: center;
+  padding: 13px 13px;
+}
+
+.non-use h3{
+  text-align: center;
+  margin-top: 2%;
+}
+
+.img-right{
+  float: right; 
+  margin-right: auto; 
+  border-top-right-radius: 30px; 
+  border-bottom-right-radius: 30px; 
+  height: 60vh;
+  width: 50%;
 }
