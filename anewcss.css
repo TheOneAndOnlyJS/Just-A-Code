@@ -515,3 +515,10 @@ h2{
   height: 60vh;
   width: 50%;
 }
+
+#na-gif{
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
