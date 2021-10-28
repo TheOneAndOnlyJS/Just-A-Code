@@ -44,3 +44,15 @@ window.addEventListener("DOMContentLoaded", function () {
     xhr.send(data);
   }
 
+  let nav = document.getElementById("scroll");
+  
+  window.addEventListener('scroll', scrollFunction())
+
+  function scrollFunction(){
+    nav.style.backgroundColor = 'red';
+  }
+
+// start animation
+  
+
+// nav-change
