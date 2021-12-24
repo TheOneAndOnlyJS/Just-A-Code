@@ -22,7 +22,10 @@
 }
 body {
   font-family: 'Quicksand', sans-serif;
-  background: #333;
+  /*background: #333;*/
+  background-image: url('./images/Christmas-Background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 main{
